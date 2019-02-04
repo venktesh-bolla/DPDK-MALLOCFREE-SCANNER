@@ -7,7 +7,7 @@ debug tool for accumlating information on `rte_calloc|zalloc|mallloc` and rte_fr
 DPDK allocas like rte_malloc, rte_calloc and rte_zalloc does not map alloc region name to address. The variables are unsed. This makes it difficult to track the uasage on dynamically allocates instance. 
 
 ## Solution
-- Create a container **to hold malloc|calloc}zalloc name, pointer and size**.
+- Create a container **to hold malloc|calloc|zalloc name, pointer and size**.
 - on every successfull allocation fetch an element holder from fb_array and update the details.
 
 # Steps
