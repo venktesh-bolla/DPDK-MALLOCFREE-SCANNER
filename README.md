@@ -1,7 +1,7 @@
 # DPDK-MALLOCFREE-SCAN
 
 ## Purpose
-debug tool for accumlating information on rte_|calloc|zalloc|mallloc and rte_free in DPDK
+debug tool for accumlating information on `rte_calloc|zalloc|mallloc` and rte_free in DPDK
 
 ## Motivation
 DPDK allocas like rte_malloc, rte_calloc and rte_zalloc does not map alloc region name to address. The variables are unsed. This makes it difficult to track the uasage on dynamically allocates instance. 
